@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Обчислення площі прямокутного трикутника </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script language="Javascript">
+function areal (r)
+{
+form1.output1.value=(3.14*r.value*r.value);
+form1.output2.value=(2*r.value);
+form1.output3.value=(2*3.14*r.value); }
+</script>
+</head>
+<body>
+<p>
+Обчислення площі круга, його діаметра та довжини дуги кола
+</p>
+<form name="form1">
+<fieldset style="width: 40%">
+<legend> Введення даних </legend>
+Радіус: <input type="text" size=7 name="st1">
+</fieldset>
+<fieldset style="width: 40%">
+<legend> Обробка та виведення даних </legend>
+Площа круга: <input type="text" size=7 name="output1"
+readonly> <br>
+Діаметр: <input type="text" size=7 name="output2" readonly> <br>
+Довжина кола: <input type="text" size=7 name="output3" readonly> <br>
+<input type="button" value="Обчислити" style="margin:10px" onClick="areal (form1.st1)">
+</fieldset>
+</form>
+<p style="text-align:center;">
+<img src="KRUG.png" style="width:300px;">
+</p>
+</body>
+</html>
